@@ -19,8 +19,10 @@ export default function ProjectCard({ project }) {
         <div className="project-card__footer">
           <span className="project-card__year">{project.year}</span>
           {/* <span className="project-card__arrow" aria-hidden="true">→</span> */}
+          <a href={project.github} className="project-card__year">→</a>
         </div>
       </div>
     </article>
   )
 }
+

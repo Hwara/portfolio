@@ -101,6 +101,7 @@ export const PROJECTS = [
     category: "Infra",
     year: "2025",
     emoji: "◎",
+    github: "https://github.com/Hwara/ddcn41-project",
   },
   {
     id: 2,
@@ -111,6 +112,7 @@ export const PROJECTS = [
     category: "Hardware",
     year: "2020~2025",
     emoji: "⬡",
+    github: null,
   },
   {
     id: 3,
@@ -120,6 +122,7 @@ export const PROJECTS = [
     category: "Hardware",
     year: "2021~2023",
     emoji: "◈",
+    github: null,
   },
   {
     id: 4,
@@ -129,6 +132,7 @@ export const PROJECTS = [
     category: "Hardware",
     year: "2021~2022",
     emoji: "▦",
+    github: null,
   },
   {
     id: 5,
@@ -138,6 +142,7 @@ export const PROJECTS = [
     category: "Software",
     year: "2023",
     emoji: "◻",
+    github: null,
   },
   {
     id: 6,
@@ -147,5 +152,6 @@ export const PROJECTS = [
     category: "Software",
     year: "2020~2025",
     emoji: "▷",
+    github: null,
   },
 ];
