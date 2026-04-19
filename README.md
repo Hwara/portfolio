@@ -1,6 +1,12 @@
 # Portfolio — Vite + React
 
-## 시작하기
+![포트폴리오 사이트](https://hwara-dev.kr)
+
+## 아키텍처
+
+CloudFlare -> AWS S3 정적 웹사이트 호스팅
+
+## 환경 구성
 
 ```bash
 # 1. 의존성 설치
