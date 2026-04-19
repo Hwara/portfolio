@@ -3,21 +3,22 @@ export const PROFILE = {
   nameEn: "Jinyeong Park",
   role: "Cloud/Infra Engineer",
 
-  bio: "하드웨어 회로부터 클라우드 인프라까지, 시스템 전 계층을 직접 다뤄본 엔지니어입니다.",
+  bio: "하드웨어 회로부터 클라우드 인프라까지, 시스템 전 계층을 직접 다뤄본 경험이 있습니다.",
   about: [
-    "저는 5년 이상 하드웨어/펌웨어 개발 분야에서 다양한 전자 제품을 설계하고 구현해 왔습니다.",
-    "그리고 제가 일하고 싶던 분야인 클라우드 및 인프라 분야로 직무변환을 위해 클라우드 네이티브 엔지니어링 과정 부트캠프를 수료하였습니다.",
-    "열심히 한 결과 부트캠프 우수 수료생으로 선정되었으며 CKA와 같은 인프라 관련 자격증을 취득하였습니다.",
-    "다양한 트러블슈팅 경험을 통해 장애 발생 시 빠르게 대응합니다. 또한 자동화를 통한 안정적이고 신속한 업무 처리를 중시합니다.",
-    "어렵고 힘든 일을 만나도 책임감을 가지고 끝까지 포기하지 않고 임무를 완수합니다.",
-    "내 의견만 내세우지 않고 상대방의 의견을 존중하며 협업을 위해 노력합니다.",
+    "하드웨어/펌웨어 개발 분야에서 5년을 보내고, 클라우드 네이티브 엔지니어링으로 전환한 개발자입니다.",
+    "현재는 Kubernetes, Terraform, AWS를 중심으로 인프라 자동화와 운영 효율화에 집중하고 있습니다.",
+    "중학생 때부터 서버와 인프라에 관심이 있었지만, 가정 형편으로 전기/전자 전공 실업계 고등학교에 진학했습니다. 졸업 후 산업용 전력 측정 제품을 개발하는 회사에서 회로 설계부터 펌웨어, 소프트웨어까지 혼자 제품 하나를 처음부터 끝까지 만드는 경험을 5년간 쌓았습니다. 그리고 본래 관심사였던 클라우드/인프라로 직무 전환하기로 결심했습니다.",
+    "하드웨어 개발을 통해 다양한 트러블슈팅 경험을 얻게 되었습니다. 노이즈 신호로 인한 오류 동작을 해결하기 위해 수십 번의 시제품 제작으로 문제를 좁혀가는 과정이 반복됐습니다.",
+    "이 경험은 클라우드 인프라에서도 그대로 이어져 Calico CNI 네트워크 장애에서 표면적 오류(DNS 에러) 너머의 근본적인 원인 (BGP/VXLAN 포트 차단)을 찾아내는 기반이 되었습니다. 이처럼 계층을 넘나들며 원인을 추적하는 사고방식은 하드웨어 디버깅을 통해 만들어졌습니다.",
+    "코드와 인프라의 경계를 자유롭게 넘나드는 엔지니어를 목표로 합니다.",
+    "부트캠프 프로젝트에서 팀원이 건강 문제로 잠시 빠지게 되어 인프라 전반을 혼자 담당하게 된 상황에서도 Terraform IaC, Kubernetes 클러스터 구축, 보안 시스템까지 기존 목표한 기능 구현을 완료하였습니다.",
 
   ],
   contact: { email: "hwara1221@gmail.com", location: "부산, 대한민국" },
   stats: [
     { num: "5+", label: "Years Experience" },
     { num: "6", label: "Projects Done" },
-    { num: "24", label: "Age(만 나이)" },
+    { num: "7", label: "자격 취득" },
   ],
   skills: [
     "Kubernetes", "Terraform", "AWS Cloud", "Git", "GitHub Actions",
@@ -34,8 +35,7 @@ export const EXPERIENCES = [
     period: "2019 — 2025",
     company: "(주)솔루윈스",
     role: "기업부설연구소 주임연구원",
-    desc: [`주로 측정/제어 하드웨어 및 펌웨어 개발을 담당하며 제품 개발 및 시제품 제작, 테스트까지 전반적인 프로젝트 실무를 주도하였습니다.
-      `,]
+    desc: [`주로 측정/제어 하드웨어 및 펌웨어 개발을 담당하며 회로 설계, PCB 제작, 펌웨어 개발 및 테스트까지 포함한 전반적인 프로젝트 실무를 주도하였고, RS485 Modbus, SPI, I2C, CAN 등 산업용 통신 프로토콜 기반 제품을 설계하고 공장에 테스트베드 설치를 수행했습니다.`]
   },
 ];
 
@@ -66,7 +66,7 @@ export const CERTIFICATE = [
   },
   {
     date: "2018.10",
-    organization: "힌국폴리텍이사장",
+    organization: "한국폴리텍이사장",
     name: "제4회 전국 고교생 드론 기술경진대회 드론 자율주행 부문",
     state: "금상"
   },
@@ -93,11 +93,11 @@ export const CERTIFICATE = [
 export const PROJECTS = [
   {
     id: 1,
-    title: "티켓 예매 서비스 및 운영 효율화를 위한 백오피스 시스템",
-    desc: "티켓 예매 서비스라는 제품과 이를 효율적으로 운영하기 위한 백오피스 시스템의 설계 및 구현",
-    tags: ["React", "Spring Boot", "PostgreSQL", "Redis", "AWS Cloud", "GitHub Actions",
-      "SonarQube", "OWASP Dependency Check", "OWASP ZAP", "MSA",
-      "Terraform", "Ansible", "Kubernetes", "ArgoCD", "Prometheus", "Grafana", "Loki", "Falco", "Velero"],
+    title: "공연 티켓팅 서비스 및 운영 효율화를 위한 백오피스 시스템",
+    desc: "공연 티켓팅 서비스 라는 제품과 이를 효율적으로 운영하기 위한 백오피스 시스템의 설계 및 구현",
+    tags: ["Kubernetes", "Terraform", "AWS Cloud",
+      "GitHub Actions", "ArgoCD", "Falco",
+      "Docker", "Linux", "Git",],
     category: "Infra",
     year: "2025",
     emoji: "◎",
