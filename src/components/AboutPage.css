@@ -1,5 +1,5 @@
 .about__hero {
-  padding-block: var(--space-16);
+  padding-block: var(--space-8);
   border-bottom: 1px solid var(--color-divider);
 }
 
@@ -8,14 +8,6 @@
   font-size: var(--text-2xl);
   font-weight: 400;
   letter-spacing: -0.02em;
-  margin-bottom: var(--space-6);
-}
-
-.about__hero-lead {
-  font-size: var(--text-lg);
-  color: var(--color-text-muted);
-  max-width: 56ch;
-  line-height: 1.7;
 }
 
 .about__body {
@@ -31,18 +23,36 @@
   gap: var(--space-6);
 }
 
-.about__body-text p {
+.about__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.about__section-title {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.4;
+  white-space: pre-line;
+  /* \n 줄바꿈 처리 */
+}
+
+.about__section-body {
   font-size: var(--text-base);
   color: var(--color-text-muted);
   line-height: 1.8;
   max-width: 58ch;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
-.about__body-text h3 {
-  font-size: var(--text-lg);
-  font-weight: 500;
-  margin-top: var(--space-4);
-  margin-bottom: var(--space-2);
+/* 기술 스택 블록 */
+.about__skills-block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
 }
 
 .about__sidebar {
@@ -169,6 +179,29 @@
   color: var(--color-text-muted);
   line-height: 1.7;
   max-width: 56ch;
+}
+
+.experience__desc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.experience__desc-list li {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  padding-left: var(--space-4);
+  position: relative;
+  word-break: keep-all;
+}
+
+.experience__desc-list li::before {
+  content: "-";
+  position: absolute;
+  left: 0;
+  color: var(--color-text-faint);
 }
 
 @media (max-width: 768px) {

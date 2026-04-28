@@ -8,18 +8,24 @@ export default function AboutPage() {
         {/* Hero */}
         <section className="about__hero" aria-labelledby="about-title">
           <h1 id="about-title" className="about__hero-title fade-in fade-in-1">About Me</h1>
-          <p className="about__hero-lead fade-in fade-in-2">{PROFILE.bio}</p>
         </section>
 
         {/* Body */}
         <section className="about__body" aria-label="소개 상세">
           <div className="about__body-text fade-in fade-in-1">
-            {PROFILE.about.map((t, i) => <p key={i}>{t}</p>)}
-            <h3>기술 스택</h3>
-            <div className="about__skills">
-              {PROFILE.skills.map((s) => (
-                <span key={s} className="skill-tag">{s}</span>
-              ))}
+            {PROFILE.about.map((item, i) => (
+              <div key={i} className="about__section">
+                <h3 className="about__section-title">{item.title}</h3>
+                <p className="about__section-body">{item.body}</p>
+              </div>
+            ))}
+            <div className="about__skills-block">
+              <h3 className="about__section-title">기술 스택</h3>
+              <div className="about__skills">
+                {PROFILE.skills.map((s) => (
+                  <span key={s} className="skill-tag">{s}</span>
+                ))}
+              </div>
             </div>
           </div>
 
@@ -70,7 +76,9 @@ export default function AboutPage() {
                 </div>
                 <div className="experience__content">
                   <h3>{e.role}</h3>
-                  <p>{e.desc}</p>
+                  <ul className="experience__desc-list">
+                    {e.desc.map((d, i) => <li key={i}>{d}</li>)}
+                  </ul>
                 </div>
               </article>
             ))}
